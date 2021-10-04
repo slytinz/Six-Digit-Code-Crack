@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 # Pathway that contains webdriver
-PATH = '/Users/tippylaptop/dev/webdriver_tool/chromedriver'
+PATH = ''
 driver = webdriver.Chrome(PATH)
 
 # Driver opens up web browser after clicking on "FORGOT PASSWORD"

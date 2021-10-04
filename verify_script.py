@@ -11,8 +11,8 @@ from selenium.webdriver.support import expected_conditions as EC
 PATH = '/Users/tippylaptop/dev/webdriver_tool/chromedriver'
 driver = webdriver.Chrome(PATH)
 
-# Driver opens up web browser 
-driver.get('https://login.platform.mattel/forgot?client_id=collectorshub&code_challenge=6yhg98M4aHc17q9u4NE7aJK8TGaNDiqusuVO3_vIXo8&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fplatform.mattel%2Foauth%2Fcallback%2Fmcpp&response_type=code&state=eyJjbGllbnRfaWQiOiJjb2xsZWN0b3JzaHViIiwibm9uY2UiOiJSaWVMTk5LTjY5eHl6RkpOTkhlTiJ9')
+# Driver opens up web browser after clicking on "FORGOT PASSWORD"
+driver.get('')
 time.sleep(2)
 
 # Inserts email we want to reset password for

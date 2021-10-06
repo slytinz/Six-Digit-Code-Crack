@@ -1,13 +1,14 @@
-#Goal: Break in to my own account by guesing the 6-digit verification code
+# GOAL: Break in to my own account by guesing the 6-digit verification code #
 
------ Mini Problems:
+
+### Mini Problems: ###
 1. Connecting to website using golang script or python (prefereably golang)
 2. Coding up a loop that will for 000000 to 999999 and break out when correct combination is found
     - Submit possible combination
 
 
------- Pseudo-code:
-
+### Pseudo-code: ###
+```
 create variable "guess" == 000000
 
 while guess != 999999:
@@ -16,9 +17,9 @@ while guess != 999999:
 
     if submission == valid:
         exit
-
-==============GOLANG==============
-**THOUGHT PROCESS**
+```
+## ==============GOLANG============== ##
+### THOUGHT PROCESS ###
 1. Make an http GET request to website to see check on endpoint
 2. Loop will go through the million possibilities to find the verification code. 
     - Within the loop, we make new requests to the http to check. We use this request to check if we recieve a status code "200 OK"
@@ -27,10 +28,11 @@ while guess != 999999:
 
 
 
-==============PYTHON==============
-------Tools: Selenium & openpyxl
+## ==============PYTHON============== ##
+**Tools:** Selenium & openpyxl
 
-SELENIUM == Task is to open web page, retrieve the relevant html and populate needed information
+SELENIUM == Task is to open web page, retrieve the relevant html and populate needed information. Web scraping tool.
+
 **REQUIREMENTS**
 - Python 3.9
 - pip

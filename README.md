@@ -1,4 +1,4 @@
------ Goal: Break in to my own account 
+#Goal: Break in to my own account by guesing the 6-digit verification code
 
 ----- Mini Problems:
 1. Connecting to website using golang script or python (prefereably golang)
@@ -17,6 +17,17 @@ while guess != 999999:
     if submission == valid:
         exit
 
+==============GOLANG==============
+**THOUGHT PROCESS**
+1. Make an http GET request to website to see check on endpoint
+2. Loop will go through the million possibilities to find the verification code. 
+    - Within the loop, we make new requests to the http to check. We use this request to check if we recieve a status code "200 OK"
+
+**Referenced:** https://pkg.go.dev/net/http
+
+
+
+==============PYTHON==============
 ------Tools: Selenium & openpyxl
 
 SELENIUM == Task is to open web page, retrieve the relevant html and populate needed information

